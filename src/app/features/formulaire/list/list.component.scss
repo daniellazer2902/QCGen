@@ -1,0 +1,32 @@
+.box {
+  width: 800px;
+  min-height: 600px;
+}
+
+.actions-cells {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  justify-content: right;
+}
+
+table {
+  width: 100%;
+  overflow: auto;
+  max-height: 300px;
+}
+
+.mat-column-actions {
+  text-align: right;
+}
+
+.form-nav {
+  display: flex;
+  justify-content: space-between;
+  .title {
+    text-align: left;
+  }
+  .submit-btn {
+    width: 200px;
+  }
+}

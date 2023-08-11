@@ -1,0 +1,23 @@
+<div class="box">
+  <form [formGroup]="loginForm">
+
+    <div class="title">Espace Enseignant</div>
+
+    <div class="input">
+      <label for="email">Email: </label>
+      <input id="email" type="email" formControlName="email">
+    </div>
+
+    <div class="input">
+      <label for="password">Mot de passe: </label>
+      <input id="password" type="password" formControlName="password">
+    </div>
+
+  </form>
+
+  <div class="btn-container">
+    <span *ngIf="invalidForm" class="invalid">Veuillez remplir tous les champs.</span>
+    <input type="button" class="submit-btn" (click)="goForward()" value="Valider">
+  </div>
+</div>
+
